@@ -1,0 +1,15 @@
+.DS_Store
+*.local
+dist
+node_modules
+.idea/
+*.log
+.env
+__snapshots__
+
+coverage
+cov.lcov
+
+/npm/src
+/npm/README.md
+/npm/LICENSE
