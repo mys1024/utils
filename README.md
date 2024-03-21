@@ -12,7 +12,7 @@
 [![workflow-ci](https://img.shields.io/github/actions/workflow/status/mys1024/starter-deno/ci.yml?label=ci&style=flat-square)](https://github.com/mys1024/starter-deno/actions/workflows/ci.yml)
 [![workflow-release](https://img.shields.io/github/actions/workflow/status/mys1024/starter-deno/release.yml?label=release&style=flat-square)](https://github.com/mys1024/starter-deno/actions/workflows/release.yml)
 
-_A [Deno](https://deno.com/) stater template 🦕_
+_Utils that meet my personal needs._
 
 </div>
 

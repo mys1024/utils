@@ -1,11 +1,7 @@
 /**
- * This is a Deno stater template 🦕
+ * Utils that meet my personal needs.
  */
 
-/**
- * Return a string about the project.
- * @returns the string about the project.
- */
-export function about(): string {
-  return "This is a Deno stater template 🦕";
+export function delay(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
