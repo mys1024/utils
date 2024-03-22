@@ -16,7 +16,7 @@ Deno.test("delay()", async (t) => {
     await delay(200);
     const end = Date.now();
     const duration = end - start;
-    assertEquals(duration > 190, true);
-    assertEquals(duration < 210, true);
+    assertEquals(duration > 200, true);
+    assertEquals(duration < 220, true);
   });
 });
