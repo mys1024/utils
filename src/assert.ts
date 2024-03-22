@@ -10,7 +10,7 @@ export function assertDurationMeets(
     min?: number;
     max?: number;
   } = {},
-) {
+): Promise<void> {
   return new Promise<void>((resolve, reject) => {
     const { min = -1, max = -1 } = options;
     let timeoutId: number | undefined;
