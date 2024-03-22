@@ -1,3 +1,7 @@
+/**
+ * This module provides utils for assertions.
+ */
+
 import { AssertionError } from "@std/assert";
 
 export async function assertDurationMeets(
