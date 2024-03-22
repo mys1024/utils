@@ -1,6 +1,6 @@
 {
   "name": "@mys/utils",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "tasks": {
     "run": "deno run src/main.ts",
     "run:watch": "deno run --watch src/main.ts",
