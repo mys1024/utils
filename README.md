@@ -19,7 +19,8 @@ _Utils that meet my personal needs._
 ## Usage
 
 ```typescript
-import { delay } from "@mysnpm/utils"; // or "jsr:@mys/utils"
+// import { delay } from "jsr:@mys/utils"; // JSR
+import { delay } from "@mysnpm/utils"; // npm
 
 await delay(1000);
 ```
