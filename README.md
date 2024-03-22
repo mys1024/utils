@@ -1,6 +1,6 @@
 <div align="center">
 
-# @mys/utils
+# utils
 
 [![jsr-version](https://img.shields.io/jsr/v/@mys/utils?style=flat-square&color=%23f7df1e)](https://jsr.io/@mys/utils)
 [![npm-version](https://img.shields.io/npm/v/@mys-x/utils?style=flat-square&color=%23cb3837)](https://www.npmjs.com/package/@mys-x/utils)
