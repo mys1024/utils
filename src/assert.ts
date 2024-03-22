@@ -1,6 +1,6 @@
 import { AssertionError } from "@std/assert";
 
-export async function assertDurationIsWithin(
+export async function assertDurationMeets(
   promise: Promise<any>,
   options: {
     min?: number;

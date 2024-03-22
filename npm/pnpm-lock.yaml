@@ -1,12 +1,19 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 devDependencies:
+  '@std/assert':
+    specifier: npm:@jsr/std__assert@^0.220.1
+    version: /@jsr/std__assert@0.220.1
   tsup:
     specifier: ^8.0.2
-    version: 8.0.2(typescript@5.4.2)
+    version: 8.0.2(typescript@5.4.3)
   typescript:
     specifier: ^5.4.2
-    version: 5.4.2
+    version: 5.4.3
 
 packages:
 
@@ -257,6 +264,16 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
+  /@jsr/std__assert@0.220.1:
+    resolution: {integrity: sha512-QsjeLrZJa2MXET5pEYFnd/gbDfDDXAX3OMBzEtQ5ZtrWYMIzo0R0TiZscuXbXYL1iXfPbos6hgll9abss9NhuQ==, tarball: https://npm.jsr.io/~/7/@jsr/std__assert/0.220.1.tgz}
+    dependencies:
+      '@jsr/std__fmt': 0.220.1
+    dev: true
+
+  /@jsr/std__fmt@0.220.1:
+    resolution: {integrity: sha512-ecIjiCfT3q6OytRkpX5lcPl1Xm7+ejBBViCJdxmAEr32d/18+XYNvABYlYKQRR455XoWcmpemQ7LV+fkAJarnA==, tarball: https://npm.jsr.io/~/7/@jsr/std__fmt/0.220.1.tgz}
     dev: true
 
   /@nodelib/fs.scandir@2.1.5:
@@ -1037,7 +1054,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /tsup@8.0.2(typescript@5.4.2):
+  /tsup@8.0.2(typescript@5.4.3):
     resolution: {integrity: sha512-NY8xtQXdH7hDUAZwcQdY/Vzlw9johQsaqf7iwZ6g1DOUlFYQ5/AtVAjTvihhEyeRlGo4dLRVHtrRaL35M1daqQ==}
     engines: {node: '>=18'}
     hasBin: true
@@ -1070,14 +1087,14 @@ packages:
       source-map: 0.8.0-beta.0
       sucrase: 3.35.0
       tree-kill: 1.2.2
-      typescript: 5.4.2
+      typescript: 5.4.3
     transitivePeerDependencies:
       - supports-color
       - ts-node
     dev: true
 
-  /typescript@5.4.2:
-    resolution: {integrity: sha512-+2/g0Fds1ERlP6JsakQQDXjZdZMM+rqpamFZJEKh4kwTIn3iDkgKtby0CeNd5ATNZ4Ry1ax15TMx0W2V+miizQ==}
+  /typescript@5.4.3:
+    resolution: {integrity: sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true

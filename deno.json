@@ -1,6 +1,6 @@
 {
-  "name": "@mys/starter-deno",
-  "version": "0.1.8",
+  "name": "@mys/utils",
+  "version": "0.1.0",
   "tasks": {
     "run": "deno run src/main.ts",
     "run:watch": "deno run --watch src/main.ts",
@@ -17,7 +17,8 @@
     "@std/assert": "jsr:@std/assert@0.220"
   },
   "exports": {
-    ".": "./src/main.ts"
+    ".": "./src/main.ts",
+    "./assert": "./src/assert.ts"
   },
   "publish": {
     "include": [

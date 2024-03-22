@@ -1,17 +1,15 @@
 {
-  "name": "starter-deno",
-  "version": "0.0.0",
-  "description": "A Deno stater template 🦕",
+  "name": "@mysnpm/utils",
+  "version": "0.1.0",
+  "description": "Utils that meet my personal needs.",
   "type": "module",
   "author": "mys1024",
   "packageManager": "pnpm@8.15.5",
   "license": "MIT",
-  "homepage": "https://github.com/mys1024/starter-deno#readme",
-  "repository": "https://github.com/mys1024/starter-deno.git",
+  "homepage": "https://github.com/mys1024/utils#readme",
+  "repository": "https://github.com/mys1024/utils.git",
   "keywords": [
-    "deno",
-    "starter",
-    "template"
+    "deno"
   ],
   "files": [
     "dist"
@@ -19,7 +17,7 @@
   "scripts": {
     "prepare": "node scripts/prepare.js",
     "clean": "node scripts/clean.js",
-    "build": "pnpm run prepare && tsup src/main.ts --format cjs,esm --dts",
+    "build": "pnpm run prepare && tsup --entry src/main.ts --entry src/assert.ts --format cjs,esm --dts",
     "build:clean": "pnpm run build && pnpm run clean"
   },
   "main": "./dist/main.js",
@@ -30,10 +28,16 @@
       "import": "./dist/main.js",
       "require": "./dist/main.cjs",
       "types": "./dist/main.d.ts"
+    },
+    "./assert": {
+      "import": "./dist/assert.js",
+      "require": "./dist/assert.cjs",
+      "types": "./dist/assert.d.ts"
     }
   },
   "devDependencies": {
     "tsup": "^8.0.2",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "@std/assert": "npm:@jsr/std__assert@^0.220.1"
   }
 }
